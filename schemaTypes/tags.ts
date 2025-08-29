@@ -10,8 +10,8 @@ export default defineType({
       title: 'Titre',
       type: 'object',
       fields: [
-        {name: 'fr', title: 'Français', type: 'string'},
-        {name: 'en', title: 'English', type: 'string'},
+        {name: 'fr', title: 'Français', type: 'string', validation: (Rule) => Rule.required()},
+        {name: 'en', title: 'English', type: 'string', validation: (Rule) => Rule.required()},
       ],
       validation: (Rule) => Rule.required(),
     }),

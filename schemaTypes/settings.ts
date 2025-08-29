@@ -39,6 +39,14 @@ export default defineType({
           options: {
             list: ['portrait', 'landscape'],
           },
+          validation: (Rule) =>
+            Rule.custom((orientation, context) => {
+              const video = (context as any).parent?.video
+              if (video && !orientation) {
+                return "L'orientation est requise si une vidéo est sélectionnée."
+              }
+              return true
+            }),
         }),
       ],
     }),
