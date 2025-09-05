@@ -21,21 +21,7 @@ export default defineType({
       ],
       validation: (Rule) => Rule.required(),
     }),
-    defineField({
-      name: 'image',
-      title: 'Image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-      validation: (Rule) => Rule.required(),
-    }),
-    defineField({
-      name: 'date',
-      title: 'Date',
-      type: 'datetime',
-      validation: (Rule) => Rule.required(),
-    }),
+
     defineField({
       name: 'slug',
       title: 'Slug',
@@ -56,6 +42,20 @@ export default defineType({
           validation: (Rule) => Rule.required(),
         },
       ],
+    }),
+    defineField({
+      name: 'image',
+      title: 'Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'date',
+      title: 'Date',
+      type: 'datetime',
       validation: (Rule) => Rule.required(),
     }),
     defineField({
