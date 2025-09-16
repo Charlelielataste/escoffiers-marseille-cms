@@ -34,12 +34,7 @@ export default defineType({
       name: 'link',
       title: 'Lien',
       type: 'url',
-    }),
-    defineField({
-      name: 'isHonored',
-      title: "À l'honneur",
-      type: 'boolean',
-      initialValue: false,
+      validation: (Rule) => Rule.required(),
     }),
   ],
 })
