@@ -1,10 +1,11 @@
 import {defineField, defineType} from 'sanity'
 
 const scarfColors = [
-  {title: 'Echarpe bleue', value: '#1e40af'},
-  {title: 'Echarpe verte', value: '#15803d'},
-  {title: 'Echarpe violette', value: '#8b5cf6'},
-  {title: 'Echarpe rouge', value: '#b91c1c'},
+  {title: 'Echarpe bleue', value: '#2a64b9'},
+  {title: 'Echarpe verte', value: '#40904a'},
+  {title: 'Echarpe violette', value: '#8e1d77'},
+  {title: 'Echarpe rouge', value: '#d13429'},
+  {title: 'Echarpe orange', value: '#ed8033'},
 ]
 
 export default defineType({
