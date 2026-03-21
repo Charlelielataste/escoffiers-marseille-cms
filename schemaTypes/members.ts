@@ -63,6 +63,11 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'link',
+      title: 'Lien restaurant ou site web',
+      type: 'url',
+    }),
+    defineField({
       name: 'email',
       title: 'Email',
       type: 'email',
