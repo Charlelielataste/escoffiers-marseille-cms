@@ -34,7 +34,6 @@ export default defineType({
       name: 'link',
       title: 'Lien',
       type: 'url',
-      validation: (Rule) => Rule.required(),
     }),
   ],
 })
