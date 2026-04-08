@@ -35,5 +35,11 @@ export default defineType({
       title: 'Lien',
       type: 'url',
     }),
+    defineField({
+      name: 'isHonored',
+      title: "À l'honneur",
+      type: 'boolean',
+      initialValue: false,
+    }),
   ],
 })
